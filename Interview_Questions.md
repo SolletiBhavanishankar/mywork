@@ -11883,7 +11883,221 @@ I2C Questions:
 40.How do you verify a fix after debugging?
 
 41.What is your complete debug methodology
+[23/06, 8:01 pm] +91 93906 92650: Hi all please find the below the list of interview questions from vvdn                  round 1.
+panel alok. 
+ 1.Self intro                                                        2.spi communication works
+Without CS
+3 SPI, is CS needed or not?
+4 Without CS how can we achieve communication?
+5. If only three SPI pins are connected and CS is not connected, why is communication still happening?
+6.write I2C frame format
+7.What is optimization
+8.explainStorage classes
+9.what is Global variable and global static variable
+10.How do you debug the code?
+[23/06, 8:07 pm] +91 63022 04776: Hi all 
+Please find mirafra interview questions 
+1. Tell me about yourself.
+2. Explain your roles and responsibilities in your current project.
+3. Describe your day-to-day activities.
+4. What is board bring-up?
+5. Explain the PCIe board bring-up process.
+6. What checks do you perform during board bring-up?
+7. How do you verify power, clock, and reset signals?
+8. What is PCIe?
+9. What are the layers in PCIe?
+10. What is LTSSM in PCIe?
+11. Explain the LTSSM states.
+12. What is the difference between L0 and L1 states?
+13. What is PCIe link training?
+14. How do you verify successful link training?
+15. What is BDF in PCIe?
+16. How is a PCIe device identified using BDF?
+17. What is PCIe enumeration?
+18. What command is used to check PCIe devices in Linux?
+19. What information can you get from lspci?
+20. What is a Root Complex?
+21. What is an Endpoint?
+22. What endpoint device did you use in your project?
+23. Did you work on the Root Complex side or Endpoint side?
+24. What is the difference between Root Complex and Endpoint?
+25. What is a TLP?
+26. What is a DLLP?
+27. What are ACK and NAK DLLPs?
+28. How do you validate ACK and NAK in PCIe?
+29. How do you debug a PCIe link failure?
+30. What protocol analyzer have you used?
+31. What did you verify using the protocol analyzer?
+32. How do you check PCIe initialization?
+33. What happens if the link does not enter L0 state?
+34. What is a Completion Packet?
+35. What is Flow Control in PCIe?
+36. What is CRC in PCIe?
+37. What is Replay Mechanism in PCIe?
+38.Write a Python program to reverse the order of words in a sentence.
+1. What is difference between tuple and list 
+2. ⁠what is polymorphism ,inheritance 
+thank you
+[23/06, 8:38 pm] jagadeesh Bro Institute: Hi All,
+Please find the Interview questions from VVDN : client (NXP)
+panels: 1. *Gourav kumar* 
+              2. *Gangadar Mada* 
 
+
+1. Tell me about yourself.
+2. What is I2C?
+3.Why is I2C half-duplex?
+4.Explain I2C frame format.
+5.Difference between 7-bit and 10-bit addressing?
+6. Why does I2C use open-drain outputs
+7. Can we use push-pull instead of open-drain in I2C?
+8. What is clock stretching in I2C
+9. What are setup time and hold time?
+10. What happens when setup time or hold time is violated?
+11. What is the vector table address?
+12. What is stored at address 0x00000000
+13. What are the ARM registers? (37 registers / ARM register set?
+14. Explain the interrupt flow in ARM.
+15. What happens internally when an interrupt occurs
+16. Which registers are automatically stacked during an interrupt
+17. What is a segmentation Fault
+18. Which registers do you check for a segmentation Fault error
+19. Which registers do you check during Hard Fault debugging
+20. How do you access a register at a specific address?
+21. What are register access modes (RO, WO, RW, W1C)?
+22. What is Privileged mode?
+23. What is Unprivileged mode?
+24. Explain ARM7 processor modes.
+25. What is end-to-end silicon validation
+26. What is core-level validation?
+27. What are corner cases in SoC validation
+28. What UART corner cases would you validate?
+29. How do you validate UART with DMA?
+30. What is cache memory?Why is cache required?
+31. What are cache clean and invalidate operations?
+32. What are the performance factors in I2C?
+33. How do you create a custom section/segmentation in C?
+34. Explain global variable memory placement:
+35. int i;
+int i = 0;
+
+int i = 10;
+
+const int i = 10; describe?
+36.Write C code to write data 0x55 to address 0x40000000?
+37. Register value, how would you set, clear, and nibble or two specific bits using bitwise operators in c.
+38. What is structure padding?
+39. What are the benefits of structure padding
+40. What are bit fields
+41. What are the benefits of bit fields?
+42. Will #define uint8_t char work?
+43. What are bit-fields
+44.What are the benefits?
+45. What is structure and union 
+46. Difference between the macros and define
+47. What is the typedef
+48. How to access the user mode to privileged mode in ARM
+49. How do you switch between the privileged mode and unprivileged mode
+50. How can you restore Privileged Mode when the SVC handler runs?
+[24/06, 1:41 pm] +91 90005 26585: Hi all 
+Please find my neurealm interview questions 
+panel: Anusree
+
+1.expalin about your self?
+2.Expalin the LTSSM states?
+3.have you faced any issues during transistion?
+4.expalin I2c flow?
+5.what is clock strecting?
+6.how do you validate clock strecting?
+7.what is Arbitration?
+8.differance b/w i2c and i3c?
+9.expalain the I2s?
+10.what issues have you faced in I2S?
+11.explain the what is your validation stratage for new IP Block?
+12.are you writen any test cases for automation validation?
+13.differance between logic analyzer and protocal analyzer?
+14.can you validate any reusable test case?
+15.write a program to set particulare bit in one number?
+16.what is volatile?
+17.differance b/w stack and heap?
+18.what is inline function?
+19.explain the ISR?
+20.expalin the ARM archituture?
+21.differance between RISC and CISC?
+22.what are the privilage modes in ARM?
+23.what is superviouser?
+24.does superviouser and system mode both are same?
+25.what happen After reset the Arm processor?
+26.what is vector table?
+27.where does vector table stored?
+28.what is watchdog timmer?
+29.expalin polling and interrupt in UART communication?
+30..write a program to set multiple bit in one number and Explain it?
+
+Thank you.
+[24/06, 2:33 pm] Raghava Raju Samunuri (STA Friend): Hi every1, find my interview questions with AMD(Malaysia).
+
+1. Explain PCIe architecture and protocol flow.
+
+
+2. What is LTSSM? Explain all major LTSSM states.
+
+
+3. What is PCIe Flow Control? Explain PH, PD, NPH, NPD, CPLH, and CPLD credits.
+
+
+4. How do you check available PCIe credits during validation?
+
+
+5. What are TLPs and DLLPs? What is the difference between them?
+
+
+6. What are ACK and NAK DLLPs?
+
+
+7. How do you know a TLP was received successfully?
+
+
+8. What happens after receiving ACK or NAK?
+
+
+9. What is the Replay Buffer and why is it required?
+
+
+10. What is a Sequence Number in PCIe and why is it used?
+
+
+11. How do you inject PCIe errors?
+
+
+12. What happens when a Fatal PCIe error occurs?
+
+
+13. What are Hot Reset, Fundamental Reset, and Function Level Reset (FLR)?
+
+
+14. How do you test and debug PCIe Link Reset?
+
+
+15. How would you debug a PCIe device/card that is not detected?
+
+
+
+16. What is NVMe and how does it use PCIe for communication?
+
+
+17. Explain NVMe initialization flow (CAP, CC, CSTS, AQA, ASQ, ACQ).
+
+
+18. What are Admin Queues and I/O Queues? How do they communicate with the SSD?
+
+
+19. How do you debug NVMe-to-PCIe communication failures?
+
+
+20. In NVMe initialization, if a step fails, how do you identify and demonstrate the exact failure point?
+
+Thank you!
 
 
 
