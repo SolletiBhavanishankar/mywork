@@ -1,0 +1,23 @@
+                      PCIe physical layer(logical gen1 and gen2)
+
+Why AC coupling capacitor is used is series with transmitter TX+ and TX- wires ?
+
+Ans:
+Without AC coupling capacitor
+* Assume transmitter common mode voltage is 0.4v and receiver common mode voltage is 0.2v.
+* As there is direct connection between the transmitter and receiver and because of DC voltage difference continuous current will flow.
+* Result is unwanted DC current, extra power consumption, bias disturbance, possibly damages if voltages are large enough.
+
+
+with AC coupling capacitor
+* Still the transmitter is at 0.4v and receiver is at 0.2v bias internally. when the capacitor is inserted.
+* Voltage difference is still there but current doesn't flow once the capacitor charges up. one plate of capacitor at 0.4v and another plate at 0.2v. There by blocking the direct current. Now the capacitor acts like open circuit.
+* But it allows the high frequency AC signal to pass. The rapid changes in signal create charging and discharging currents through the capacitor therefore the capacitor allows these changing components to pass.
+
+IMP - Refer signal integrity concepts from Eric Bogatin articles and books.
+
+
+As in spec mentioned that most of the symbols are of positive disparity or negative disparity and few symbols with neutral disparity, now if the positive parity symbol is sent previously and now there is no negative parity symbol available now how does this situation will be handled as it becomes problem if we send again a positive parity symbol?
+
+
+ 
