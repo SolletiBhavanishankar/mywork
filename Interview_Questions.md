@@ -12099,6 +12099,325 @@ Thank you.
 
 Thank you!
 
+[24/06, 6:53 pm] +91 70134 91311: Hi all 
+Please  find vvdn L1 Interview questions 
+1.self introduction
+2.how do you validate link training 
+3.Explain pcie Enumeration  and how do you validate 
+4.What are TLP and DLP explain
+5.If PCIe  come only to Gen1 instead of gen4 how do you validate 
+6.explain about pcie stress validation and tools used
+7.Can you explain I2C  and how do you validate 
+8.What is open drain in i2c
+9.what is arbitration in i2c and  which master win the bus
+10.Explain SPI modes.
+11.In spi how do you validate explain
+12.if spi slave  is receiving corrupted data what could  be the issue? How will you identify whether it is a hardware issue or a firmware issue?
+13.What is bitrate and baudrate ?
+14.Explain complete silicon bring-up.
+15.How do you Validate power, reset, and clock?
+16.explain complete booting process in embedded systems ⁠
+17.Memory layout in C.
+18.Volatile keyword with example.
+19.Explain Storage class in c
+20.What is Callback function in c
+21.char 200
+char 100
+Int c=a+b;
+Output of this code
+22.write a program using function pointer and call back function 
+23.He given a program and ask me to explain
+24.wacp to set and clear bit  in rightmost number
+25.find the position of rightmost set bit and explain
+thankyou
+[24/06, 6:55 pm] +91 63014 12754: Hi all,
+Please find the below questions from the probus.
+
+ 1.interest on your field
+2.why are you looking for a switch?
+3.you flash firmware and see a kernel panic while booting. How will you debug it?
+4.kernel panic how do you see driver 5.logs before boot up?
+difference between user space and kernel space
+6.what is a zombie process?
+7.Have you used modprobe?
+8.What is the issue in the open() code shown in the image?
+8.Give me code to toggle a GPIO ON and OFF every 1 second using /sys/class/gpio
+9.Difference between fork(), vfork(), and clone()
+10.Difference between sync(), fsync(), and fdatasync()
+11.VFS: Unable to mount root fs on unknown-block(0,0) —what is the issue and how do you correct it?
+12.Structure of Device Tree — explain
+13.Explain the Device Tree snippet shown in the images
+[24/06, 7:42 pm] +91 75695 40248: Hii all please find below question from Spanidea
+
+👉const int *ptr;
+      int *const ptr;
+      const int *const ptr;
+👉struct data {
+      char a;
+       int  b;
+       char c;
+        };
+👉0x2 << 3 ouput?
+👉explain function pointer 
+       Sum of two numbers using function        pointer 
+👉About ISP do and donts
+👉diff b/w polling and interrupt
+👉semaphore and mutex and mechanisms 
+👉SPI AND UART briefly
+[24/06, 9:12 pm] +91 88014 26915: Hi All,
+please find the interview questions asked by NXP client.
+panel : Gangadar, Gaurav, Sakshi
+
+1. Board Bringup Flow: What is the step-by-step process and checklist for bringing up a new hardware board for the first time?
+2. SD Host Controller Modules: What are the internal modules and external connections of an SD Host Controller?
+3. SD Card Initialization Flow: Explain the step-by-step initialization sequence using CMD0, CMD8, ACMD41, CMD2, CMD3, CMD9, and CMD7.
+4. I2C vs. I3C: What are the key differences between the I2C and I3C bus protocols?
+5. What is an Interrupt? Define what an interrupt is in embedded systems.
+6. Hardware vs. Software Interrupts: What is the difference between them?
+7. Interrupt Vector Table (IVT) Location: How does the CPU know exactly where the IVT is located in memory?
+8. Execution Jump to ISR: What is the step-by-step mechanism of how the CPU jumps to an Interrupt Service Routine (ISR)?
+9. Interrupt Latency: What is it, and what factors contribute to it?
+10. Important ARM Cortex-M Registers: Provide an overview of the core registers.
+11. General Purpose Registers: What is the role of registers R0 through R12?
+12. Program Counter (PC): What is the function of the PC register?
+13. Link Register (LR) vs. Program Counter (PC): What is the difference between the Link Register and the Program Register (PC)?
+14. The Stack: What is a stack, why do we absolutely need it, and can a CPU execute code without one?
+15. Stack in Trace32: Have we seen or how do we view/analyze the stack in Lauterbach Trace32 (T32)?
+16. Startup Code: What are the key parts and phases of a microcontroller's startup code?
+17. Endianness Explained: What is the difference between Big Endian and Little Endian, and how is data physically stored in memory for each?
+18. Header Files (<...> vs "..."): What is the difference between #include <stdio.h> and #include "stdio.h" (or a local file like "10.h")? Why might someone choose not to use stdio.h in embedded C?
+19. Function Pointers: What is the syntax and practical usage of function pointers in C?
+20. Endianness C Program: Write a C program to dynamically check whether a system is Little Endian or Big Endian.
+21. Counting Set Bits: How do you count the number of set bits (1s) in an 8-bit number? Explain the logic to do this *without* using the bitwise shift operator.
+22. Negative Numbers & Two's Complement: How are negative numbers stored in memory, and why is Two's Complement universally preferred for representing them?
+23. Identifying Negative Numbers in C: How do you identify if a number is negative in C? Explain the underlying logic.
+Thankyou.
+[25/06, 10:00 am] +91 93925 26404: Hii all,
+Please find the interview questions with UST
+Panel: vinay 
+1.Introduction
+2.debbuging experience you have 
+3.Need of pull up resistors you have 
+4.Tell me about some basic commands used in Linux
+5.scp command usage (secure copy)
+6.why we use ssh command 
+7.differece between ram rom
+8.vbias vs pre bias
+9.digital multimeter usage
+10.how to measure current 
+11.Have you worked on placed silicon on motherboard
+12.What Major Precautions Do You Take During Silicon Validation / Bring-up?
+13.Do you know ATX Power Supply?" or "Have you worked with ATX power supplies?
+14.Do you know how to power ON an SMPS without pressing the power button?
+15.chmod command in Linux
+16.How Would You Troubleshoot if a Computer Does Not Boot?
+17.Have You Worked on Connecting an Oscilloscope?
+18.What Are the Different Types of Oscilloscopes?
+19.Have You Seen or Used a DMM in the Lab?
+20.Have You Worked on Data Acquisition Systems (DAQ)?
+21.Do You Know How to Connect a Graphics Card?
+22.Have You Worked on Server Tools or Remote Control Tools
+23.Do You Know How to Use JIRA?
+24.Difference Between I2C (IIC) and SPI
+25.How Do You Assemble a Complete PC (CPU Cabinet)?
+26.How do you connect to a server? or How do you connect a PC to a server?
+27.BMC (Baseboard Management Control and CPLD (Complex Programmable Logic Device) differences
+28.Have You Worked on Liquid Cooling or Air Cooling?
+29.Difference Between List and Tuple in Python
+
+Thankyou.
+[25/06, 10:45 am] +91 98494 56651: Hi all,
+Please find the below questions from HCL
+Panel: Ganesh 
+1.Tech stack you worked on
+2.Which microcontroller you worked on
+3.Gen4 – is it DDR or what?
+4.Testing experience
+5.Functional validation – my day-to-day activities
+6.Protocol analyzer and logic analyzer – are they the same?
+7.Windows experience
+8.Teams camera issue – camera turns off after 5 minutes, how do you debug it?
+Narrate the debugging in a real-time use case
+Make it sound starting from the basics
+9.How to do RCA (Root Cause Analysis)?
+RCA for the above Teams camera problem
+10.What logs do you collect in any issue?
+11.Stick to the Teams camera problem itself – 12.what logs do you collect?
+13.Handle memory leaks in C
+14.Dynamic array of size 10 with only 5 elements used in a memory-constrained system – how to solve it dynamically?
+15.Real-world analogy: entry pass application with 10 seats but only 5 attendees
+16.Can we append upon every entry?
+17.Have you written automation scripts?
+18.Windows internals
+Do you have the Windows internals skill?
+[25/06, 1:42 pm] +91 93985 49360: Hii all, 
+Please find the below questions from AMD
+
+Panel: Yama Sharath kumar
+
+1. Tell me about yourself.
+
+2. What are recent project your roles and responsibilities?
+
+3. What is UART?
+
+4. Explain one UART test case.
+
+5. What does UART initialization mean?
+
+6. Write UART transmit code to send "NIHARIKA".
+
+7. Why do we use while(1)?
+
+8. What are TXE and RXNE?
+
+9. Explain the boot process in an embedded board.
+
+10. What OS concepts do you know?
+
+11. Once OS initialization is complete, what can the user use?
+
+12. Where did you use Python?
+
+13. Explain one Python automation scenario.
+
+14. We have 1000 test cases. How do you automate log analysis using Python?
+
+15. How much time did regression execution take?
+
+16. In your experience, which PCIe debug issue did you find?
+
+17. Where did you identify that PCIe issue?
+
+18. Write a Python script to extract failed test cases from a log file.
+
+19. What are OOP concepts in Python?
+
+20. Where did you use the Linux platform?
+
+21. Which Linux commands did you use?
+[25/06, 1:53 pm] +91 93984 67825: Hii all
+Please find below questions for votarysoftech.
+
+Panel: venkataswarlu 
+
+1.self intro.
+
+2.rate u r self in c, device drivers, and linux.
+
+3.write a code given number is Armstrong number or not.
+
+4.write a single linked list and insert a node and reverse it without recursion.
+
+5.Write a code string copy without using library functions.
+
+6.Which APIs to develop device drivers.
+
+7.what u develop in character device driver.
+
+Thank you sir.
 
 
+[25/06, 4:53 pm] Uday Friend(STA): Votary SoftTech Interview Questions
+
+Panel: Ramanareddy
+
+1. Self-introduction.
+2. Which project did you work on?
+3. Write a C program to take a string as input (e.g., "India"), count the vowels in the string, and reverse the positions of the vowels.
+4. Explain how to count the characters in a string.
+5. Explain the boot sequence from power-on until the operating system starts.
+6. Explain the SoC (System-on-Chip) booting process.
+7. What is an ELF file?
+8. What information does a Device Tree contain?
+9. Explain the Character Device Driver flow.
+10. Explain the Static Storage Class in C.
+11. What does ".elf" stand for?
+12. Have you ever modified a Device Tree? If yes, in which scenario?
+
+Thank you, Sir.
+[25/06, 6:17 pm] jagadeesh Bro Institute: Hi All,
+Please find the below questions from Tessolve Semiconductor (L2) Client:(NXP)
+
+Panels : 1. *Amit* 
+               2. *Pankaj* 
+
+1. Self introduction?
+2. Without source code, how do you identify where the issue is occurring?
+3. What information can JTAG provide when only a binary image is available?
+4. How do breakpoints work in JTAG debugging?
+5. What is the difference between software breakpoints and hardware breakpoints?
+6. How do you find the Program Counter (PC) value during a crash?
+7. How do you identify whether the CPU is stuck in a loop?
+8. How do you debug a hard fault using JTAG?
+9. If you don't have a debugger, how would you determine that a function has failed?
+10.  Explain the SPI protocol.
+11. What are the signals used in SPI?
+12. How does SPI communication work using an oscilloscope?
+13. The controller sends a READ command to SPI Flash, but no data is received. How would you debug it?
+14. CS is toggling correctly and MOSI data is correct, but MISO is not responding. What could be the issue?
+15. If all SPI register configurations are correct but communication still fails, what could be the root cause?
+16. How do CPOL and CPHA affect SPI communication?
+17. What happens if the SPI clock frequency exceeds the slave specification?
+18. How do you validate SPI timing using an oscilloscope?
+19. What are common SPI failures observed during silicon validation29. Explain the C compilation flow.
+20. What are the stages of compilation?
+21. What is preprocessing?
+22. What is object code?
+23. What is linking?
+24. What are function references?
+25. Is printf() the only function reference? Explain.
+26. How does the linker resolve function references?
+27. What is a symbol table?
+28. What information is stored in a symbol table?
+29. How do you distinguish between a function and a global variable in a symbol table?
+30. How does the compiler know whether a symbol represents a function or a variable?
+31. What is the difference between a function symbol and a variable symbol?
+32. What is an unresolved symbol?
+33. If a function reference is unresolved, will compilation succeed?
+34. If a symbol remains unresolved, will executable generation succeed?
+35. How do you find the address of the read() function?
+36. How do you find the address of an unresolved function?
+37. Explain PCIe enumeration.
+38. How does host-side PCIe enumeration work?
+39. What happens after reset and before PCIe reaches the L0 state?
+40. Explain the PCIe Link Training process.
+41. What are Detect, Polling, Configuration, Recovery, and L0 states?
+42. What is LTSSM?
+43. How do you debug PCIe link bring-up failures?
+44. What are common PCIe enumeration failures?55. What is a PCIe PHY?
+45. What functions are handled by the PCIe PHY?
+46. What is lane polarity inversion in PCIe?
+47. How does the receiver detect lane inversion?
+48. How does the host know that lane inversion has occurred?
+49. What is lane reversal?
+50. How does PCIe clock recovery work?
+51. Does PCIe transmit a clock along with data?
+52. If PCIe does not transmit a clock, how is synchronization achieved?
+53. What is REFCLK in PCIe?
+54. What is the purpose of the PCIe reference clock?
+55. What happens if REFCLK is missing?
+56.  What is SoC bring-up?
+57. What are the first checks performed during SoC bring-up?
+58.  Explain JTAG architecture.
+59. What are the JTAG pins?
+60. What is the TAP Controller?
+61. Why is PVT testing performed?
+62. What are Process Corners?
+63. What are Voltage Corners?
+64. What are Temperature Corners?
+65. What is the difference between SS, TT, and FF corners?
+66. What types of silicon bugs are found during PSV?
+67. Explain a PCIe link bring-up failure you debugged.
+68. Explain a protocol violation issue you found during validation.
+69. Explain a power-management bug found during validation.
+70. What is the root-cause analysis process in PSV?
+71. What RTL issues are commonly observed during silicon validation?
+72. How do you differentiate an RTL bug from a firmware bug?
+73. If the same test is executed under the same conditions, will the issue reproduce every time?
+74. What is a deterministic bug?
+75. What is a non-deterministic bug?
+76. How do you debug intermittent silicon failures?
+
+Thank you.
 
