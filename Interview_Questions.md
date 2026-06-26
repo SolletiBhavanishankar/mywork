@@ -12421,3 +12421,94 @@ Panels : 1. *Amit*
 
 Thank you.
 
+
+[25/06, 9:28 pm] +91 93816 95993: Hi All,
+Please find the below questions from digicom
+
+Panel: Praveen G
+
+1. Tell me about yourself?
+2. How do you validate PVT corners?
+3. What temperatures do you use in PVT testing?
+4. What are thermal heads/thermal chambers?
+5. How do you know the silicon is stable at different voltages and temperatures?
+6. Why do we test worst-case PVT scenarios?
+7. What is device bring-up?
+8. What activities do you perform during board/device bring-up?
+9. How do you analyze logs?
+10. Do you analyze logs manually or using scripts?
+11. What does your log parsing script do?
+12. How do you report validation status to your manager?
+13. How do you execute and monitor test cases?
+14. What parameters are passed to test cases?
+15. What does a typical PCIe validation test case look like?
+16. Which utilities do you use during validation?
+17. Which framework do you use for log parsing?
+18. How do you collect Linux system information?
+19. Which command shows PCIe information?
+20. How do you check which driver is loaded?
+21. What is a device driver?
+22. How do you uninstall/remove a driver?
+23. How do you check running processes?
+24. How do you check memory utilization?
+25. How do you copy test cases in Linux?
+26. How do you search a string in Linux logs?
+27. How do you read only PCIe logs from dmesg?
+28. What is the Linux boot process?
+29. What happens during BIOS initialization?
+30. How are keyboard and mouse detected during boot?
+31. What Linux commands do you use in daily work?
+32. Difference between make and cmake?
+33. Basic Vim commands.
+34. How do you search for a string in Vim?
+35. How do you move the cursor from one line to another?
+36. How do you jump to a specific line?
+37. Explain CPU architecture.
+38. What are PC, SP, and LR?
+39. What happens during interrupt handling?
+40. Difference between ARM and x86?
+41. Are ARM processors used in desktops?
+42. What is the role of CPU?
+43. What is the role of GPU?
+44. CPU vs GPU.
+45. How does a system decide whether work goes to CPU or GPU?
+46. Who is responsible for assigning tasks to CPU or GPU?
+47. What are Python data types?
+48. Use cases of List and Tuple.
+49. What is Recursion?
+50. What is a Lambda function?
+51. What is filter()?
+52. Difference between filter() and map()?
+53. Usage of break.
+54. Usage of continue.
+55. Usage of pass.
+56. Have you seen Python scripts used for log parsing?
+57. What Python libraries are used for log parsing?
+58. How do you check a specific driver?
+59. What happens if a driver is not loaded?
+60. How does the OS know which driver to load?
+
+Thankyou
+[26/06, 5:10 pm] Chanikya: Hi all,
+Please find the below questions from Votarysofttech 
+
+Panel: Tejaswini
+
+1. Expline project?
+2. What is inode number?
+3. What is a Thread?
+4. What is Multithread Programming?
+5. What is Deadlock?
+6. Difference between Linux and RTOS?
+7. What is Heap Memory?
+8. Difference between malloc() and calloc()?
+9. Why malloc and calloc are different?
+10. Why is calloc slightly slower than malloc?
+11. What is void and void pointer in C?
+12. What is an Automatic Variable?
+13. Difference between Macro and Enum?
+14. What is spinlock?
+15. Difference between mutex and semaphore?
+16. Expline Fibonacci series?
+
+Thank you.
