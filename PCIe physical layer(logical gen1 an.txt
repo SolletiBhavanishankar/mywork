@@ -19,5 +19,186 @@ IMP - Refer signal integrity concepts from Eric Bogatin articles and books.
 
 As in spec mentioned that most of the symbols are of positive disparity or negative disparity and few symbols with neutral disparity, now if the positive parity symbol is sent previously and now there is no negative parity symbol available now how does this situation will be handled as it becomes problem if we send again a positive parity symbol?
 
+--------------------------------------------------------------------------------------------------------
 
- 
+
+Eye Diagram (Eye Pattern)
+
+The eye diagram (or eye pattern) is the gold standard for analyzing signal integrity in high-speed serial protocols like PCIe and USB.
+
+Because these protocols operate at multi-gigabit speeds, digital signals don't look like perfect square waves anymore—they suffer from attenuation, jitter, and noise.
+
+An eye diagram works by overlapping thousands of bits of captured data into a single composite image.
+
+If the "eye" is wide open, your signal is clean.
+If it's closed, you have signal integrity issues.
+
+------------------------------------------------------------
+1. Required Hardware Setup
+------------------------------------------------------------
+
+Before touching the scope settings, your physical connection must be flawless.
+
+• High-Bandwidth Scope
+  - You need an oscilloscope with a bandwidth at least 3× to 5× the fundamental frequency of your signal.
+  - Example:
+      USB 2.0 (480 Mbps) needs about a 1.5 GHz scope.
+      PCIe Gen 3 (8 Gbps) requires at least a 13–16 GHz scope.
+
+• High-Speed Probes
+  - Use matched differential probes with minimal loading effects.
+  - Or connect via high-quality coaxial cables directly to a compliance test fixture.
+
+• Keep Leads Short
+  - Long ground leads act like antennas and inductors.
+  - They completely distort high-frequency signals.
+
+------------------------------------------------------------
+2. Key Oscilloscope Settings & Configurations
+------------------------------------------------------------
+
+To generate an eye diagram, you move away from standard time-domain triggering and use Infinite Persistence together with a Clock Data Recovery (CDR) software loop.
+
+------------------------------------------------------------
+A. Vertical (Amplitude) Settings
+------------------------------------------------------------
+
+• Scale
+  - Adjust the vertical volts/div so that the signal occupies about 60% to 80% of the screen height.
+  - This maximizes the dynamic range of the scope's ADC without clipping.
+
+• Coupling
+  - Set to DC (50 Ω).
+  - High-speed serial standards are designed for a 50 Ω single-ended (100 Ω differential) transmission line environment.
+  - Never use 1 MΩ.
+
+------------------------------------------------------------
+B. Horizontal (Timebase) Settings
+------------------------------------------------------------
+
+• Sampling Rate
+  - Set to the highest possible sampling rate.
+  - You need the highest possible sample rate to accurately capture the edges and jitter.
+
+• Time/Division
+  - Set this so that exactly 1.5 to 2 bit periods (Unit Intervals or UI) fit across the screen.
+  - This allows you to see the full eye opening in the center, flanked by two crossing points.
+
+------------------------------------------------------------
+C. Display & Acquisition Settings
+------------------------------------------------------------
+
+• Acquisition Mode
+  - Set to Sample or High Resolution.
+  - Turn OFF averaging.
+  - Averaging smooths out the random noise and jitter that you are trying to measure.
+
+• Persistence
+  - Change from Off or Auto to Infinite Persistence.
+  - Or use Variable Persistence with a long duration.
+  - This tells the scope to keep drawing new waveforms over old ones, gradually building up the eye pattern.
+
+------------------------------------------------------------
+D. Triggering & Clock Data Recovery (CDR)
+(The Most Critical Step)
+------------------------------------------------------------
+
+If you trigger on a standard edge, the scope resets its display at every edge.
+You will not get a proper overlay of different bit sequences.
+
+Modern Method (Software CDR)
+
+• Go to:
+    Apps/Analyze → Jitter/Eye Analysis
+
+• Turn ON Clock Data Recovery (CDR).
+
+• High-speed protocols do not transmit a separate clock line.
+
+• The clock is embedded in the data.
+
+• The oscilloscope runs a software PLL (Phase-Locked Loop) to extract the clock from the data.
+
+• The extracted clock is then used as the trigger.
+
+• Select the specific communication standard
+  (PCIe Gen 3, USB 3.0, etc.)
+
+• The scope automatically configures the correct PLL loop bandwidth.
+
+Hardware Method (External Clock)
+
+• If you are using a BERT (Bit Error Rate Tester)
+  or your board provides a clock output,
+
+• Feed that clock into Channel 2 (or AUX input).
+
+• Set the oscilloscope trigger source to that channel.
+
+------------------------------------------------------------
+3. Analysis Process (What to Check)
+------------------------------------------------------------
+
+Once the eye diagram builds up on the screen, analyze its health using three main criteria.
+
+------------------------------------------------------------
+1. Eye Opening Metrics
+------------------------------------------------------------
+
+• Eye Height
+  - Measures noise margin.
+  - If the eye is compressed vertically,
+    the signal has too much noise or attenuation.
+
+• Eye Width
+  - Measures jitter tolerance.
+  - A narrow eye indicates significant timing jitter.
+
+------------------------------------------------------------
+2. Mask Testing
+------------------------------------------------------------
+
+• PCI-SIG and USB-IF define specific geometric masks.
+
+• The mask is usually a hexagon or diamond in the center of the eye,
+  along with blocks at the top and bottom.
+
+• Load the standard-specific mask file into the oscilloscope.
+
+• If any waveform touches or enters the mask boundaries,
+  the signal fails compliance.
+
+------------------------------------------------------------
+3. Jitter Decomposition
+------------------------------------------------------------
+
+If the eye is closing horizontally,
+use the oscilloscope's advanced analysis tools to separate:
+
+• Deterministic Jitter (DJ)
+  - Usually caused by:
+      - Inter-Symbol Interference (ISI)
+      - Crosstalk
+
+• Random Jitter (RJ)
+  - Usually caused by:
+      - Thermal noise
+      - Clock source instability
+
+------------------------------------------------------------
+Quick Tip for PCIe/USB
+------------------------------------------------------------
+
+If you see a "double eye"
+or an eye with multiple ghost lines inside it,
+
+don't panic immediately.
+
+High-speed layouts use
+De-emphasis / Pre-emphasis (equalization)
+
+to boost high-frequency components.
+
+This intentionally creates two or more distinct voltage levels for consecutive bits.
+
+These different voltage levels appear as distinct lines inside the eye diagram.
